@@ -10,10 +10,6 @@
       "email": "granthamparmar@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
-  "require": {
-    "php": "~8.0.0|~8.1.0|~8.2.0"
-  },
   "autoload": {
     "files": [
       "registration.php"
