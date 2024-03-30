@@ -1,0 +1,12 @@
+<div class="recently-viewed-categories">
+    <div data-bind="foreach: recentlyViewedCategories">
+        <!-- ko if: children_count > '0' -->
+            <h3 class="main-category-name" data-bind="text: name"></h3>
+        <ol class="sub-cat-section" data-bind="foreach: children">
+            <li><h4 class="sub-category-name" data-bind="text: name"></h4></li>
+            <li><h4 class="sub-category-desc" data-bind="html: description"></h4></li>
+            <li><img class="sub-cat-image" data-bind="attr:{src:image, alt: name}"/></li>
+        </ol>
+        <!-- /ko -->
+    </div>
+</div>

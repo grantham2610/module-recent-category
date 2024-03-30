@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--
+  /**
+   *  Copyright © Grantham, Inc. All rights reserved.
+   *
+   */
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <recent_category>
+            <general>
+                <enabled>0</enabled>
+            </general>
+        </recent_category>
+    </default>
+</config>

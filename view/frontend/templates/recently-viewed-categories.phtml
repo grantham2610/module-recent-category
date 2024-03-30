@@ -1,0 +1,17 @@
+<div id="recently-viewed-categories-block" data-bind="scope:'recently-viewed-categories'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "#recently-viewed-categories-block": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "recently-viewed-categories": {
+                        "component": "Grantham_RecentCategory/js/view/recently-viewed-categories"
+                    }
+                }
+            }
+        }
+    }
+</script>

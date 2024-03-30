@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--
+  /**
+   *  Copyright © Grantham, Inc. All rights reserved.
+   *
+   */
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="grantham" translate="label" sortOrder="999">
+            <label>Grantham</label>
+        </tab>
+        <section id="recent_category" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Recent Category</label>
+            <tab>grantham</tab>
+            <resource>Grantham_RecentCategory::config_grantham_recentcategory</resource>
+            <group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>General Configuration</label>
+                <field id="enabled" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enabled</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="categories" type="text" sortOrder="12" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Categories</label>
+                    <comment>use delimiter comma(,) to specify multiple category ids</comment>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>

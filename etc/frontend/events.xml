@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  /**
+   *  Copyright © Grantham, Inc. All rights reserved.
+   *
+   */
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_controller_category_init_after">
+        <observer name="store_category_in_viewed" instance="Grantham\RecentCategory\Observer\StoreCategoryInViewed"/>
+    </event>
+    <event name="controller_action_predispatch_cms_index_index">
+        <observer name="cms_category_viewed" instance="Grantham\RecentCategory\Observer\CmsIndexInitObserver" />
+    </event>
+</config>
